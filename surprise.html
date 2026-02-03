@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive Birthday Surprise for Priya Akka">
+    <title>🎁 Birthday Surprise for Priya Akka 💖</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="surprise-style.css">
+</head>
+
+<body>
+    <!-- Initial Screen -->
+    <div class="initial-screen" id="initialScreen">
+        <div class="background-hearts" id="bgHearts"></div>
+
+        <div class="surprise-button-container">
+            <button class="surprise-button" id="surpriseButton">
+                <span class="button-text">
+                    🎁 There is a Surprise for You 🎁<br>
+                    <span class="click-text">Click the button</span>
+                </span>
+            </button>
+            <div class="click-counter" id="clickCounter">Click me!</div>
+        </div>
+    </div>
+
+    <!-- Explosion Effects -->
+    <div class="explosion-container" id="explosionContainer"></div>
+    <div class="hearts-burst" id="heartsBurst"></div>
+    <div class="confetti-burst" id="confettiBurst"></div>
+
+    <!-- Birthday Message Cards -->
+    <div class="cards-container" id="cardsContainer">
+        <div class="popup-card card-main" id="cardMain">
+            <div class="card-content">
+                <h1 class="card-title">💖 Very Very Happy Birthday 💖</h1>
+                <h2 class="card-name">Priya Akka 🎂</h2>
+                <div class="card-message">
+                    <p>Akka, nee Dubai-la work pannitu irukaradhu nala namma neraya naal direct-aa meet pannala. Romba
+                        naal achu nee face-to-face paaththu pesa, sirikka, small small memories share pannitu
+                        irundhadhukku.</p>
+
+                    <p>Un voice, un caring, un advice ellamey daily romba miss pannuren. Distance irundhaalum namma bond
+                        konjam kooda kammi aagala akka.</p>
+
+                    <p>Nee eppavum en manasula iruka, en strength-aa iruka. Indha birthday-la unna direct-aa hug panna
+                        mudiyala nu kashtam irundhaalum, indha small surprise-la en full love-um miss-um send pannuren
+                        akka.</p>
+
+                    <p class="final-wish">✨ Very very Happy Birthday Priya Akka 💖🎂 ✨</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final celebration effects -->
+    <div class="celebration-sparkles" id="celebrationSparkles"></div>
+
+    <!-- Audio elements -->
+    <audio id="popSound" preload="auto">
+        <source
+            src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBSuBzvLZiTYIGWi78OScTgwMUKXh8LZjHAU5kdXzzn0xBSh+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBSl+zPLaizsIHGS57OihUhELTKXh8bllHgU2jdT0z4IyBQ=="
+            type="audio/wav">
+    </audio>
+
+    <script src="surprise-script.js"></script>
+</body>
+
+</html>
